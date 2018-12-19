@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-viacom-sharepoint",
+  "version": "1.0.4",
+  "description": "ESLint Config file for SharePoint Projects developed in Viacom",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taranxd/ESLintConfig.git"
+  },
+  "author": "Taran Goel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taranxd/ESLintConfig/issues"
+  },
+  "homepage": "https://github.com/taranxd/ESLintConfig#readme",
+  "dependencies": {}
+}
