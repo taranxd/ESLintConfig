@@ -755,9 +755,6 @@ module.exports = {
         // enforces consistent naming when capturing the current execution context
         'consistent-this': 'off',
 
-        // enforce newline at the end of file, with no multiple empty lines
-        'eol-last': ['error', 'always'],
-
         // enforce spacing between functions and their invocations
         // https://eslint.org/docs/rules/func-call-spacing
         'func-call-spacing': ['error', 'never'],
@@ -800,7 +797,7 @@ module.exports = {
 
         // this option sets a specific tab width for your code
         // https://eslint.org/docs/rules/indent
-        indent: ['error', 2, {
+        indent: ['error', "tab", {
             SwitchCase: 1,
             VariableDeclarator: 1,
             outerIIFEBody: 1,
@@ -863,7 +860,7 @@ module.exports = {
 
         // disallow mixed 'LF' and 'CRLF' as linebreaks
         // https://eslint.org/docs/rules/linebreak-style
-        'linebreak-style': ['error', 'unix'],
+        'linebreak-style': ['error', 'windows'],
 
         // require or disallow an empty line between class members
         // https://eslint.org/docs/rules/lines-between-class-members
@@ -1267,9 +1264,6 @@ module.exports = {
         // disallow labels that share a name with a variable
         // https://eslint.org/docs/rules/no-label-var
         'no-label-var': 'error',
-
-        // disallow specific globals
-        'no-restricted-globals': ['error', 'isFinite', 'isNaN'].concat(confusingBrowserGlobals),
 
         // disallow declaration of variables already declared in the outer scope
         'no-shadow': 'error',
