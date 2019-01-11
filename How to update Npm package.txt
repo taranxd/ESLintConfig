@@ -1,0 +1,1 @@
+npm i -g eslint eslint-config-viacom-sharepoint@1.0.9

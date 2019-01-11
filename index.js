@@ -797,7 +797,7 @@ module.exports = {
 
         // this option sets a specific tab width for your code
         // https://eslint.org/docs/rules/indent
-        indent: ['error', "tab", {
+        indent: ['error', 4, {
             SwitchCase: 1,
             VariableDeclarator: 1,
             outerIIFEBody: 1,
@@ -1271,16 +1271,10 @@ module.exports = {
         // disallow shadowing of names such as arguments
         'no-shadow-restricted-names': 'error',
 
-        // disallow use of undeclared variables unless mentioned in a /*global */ block
-        'no-undef': 'error',
-
-        // disallow use of undefined when initializing variables
-        'no-undef-init': 'error',
-
-        // disallow use of undefined variable
+        // allow use of undefined variable
         // https://eslint.org/docs/rules/no-undefined
         // TODO: enable?
-        'no-undefined': 'off',
+        'no-undefined': 'on',
 
         // disallow declaration of variables that are not used in the code
         'no-unused-vars': ['error', {
